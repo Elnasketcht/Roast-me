@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<title>Roast Generator</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    flex-direction: column;
+  }
+  #startButton {
+    padding: 20px 40px;
+    font-size: 32px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #d32f2f;
+    color: white;
+    transition: transform 0.2s;
+  }
+  #startButton:hover {
+    transform: scale(1.1);
+  }
+  #roast {
+    margin-top: 50px;
+    font-size: 24px;
+    color: #d32f2f;
+    max-width: 600px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<button id="startButton">Roast</button>
+<p id="roast"></p>
+
+<script>
+const roasts = [
+  "Je bent zo traag, zelfs een slak lacht je uit 🐌😂",
+  "Je haar lijkt op een kapotte WiFi antenne 📡😆",
+  "Zelfs Google weet geen antwoord op jouw niveau 🤯",
+  "Je dansmoves zijn gevaarlijk voor de mensheid 💃⚠️",
+  "Je maakt Alexa bang 🤖😱",
+  "Je grappen zijn zo droog dat de Sahara jaloers is 🌵🤣",
+  "Je hoodie is mooier dan je persoonlijkheid 👕😂",
+  "Zelfs Siri zou zeggen: 'Dit kan ik niet verbeteren' 😎",
+  "Je kookkunsten zijn gevaarlijk voor de voedselveiligheid 🍳💀",
+  "Je timing is zo slecht dat zelfs een klok je negeert ⏰😅",
+  "Je bent zo vergeetachtig dat je je eigen naam moet googelen 🤦‍♂️",
+  "Je bent zo klein dat je schaduw een onderzetter kan zijn 🌚",
+  "Je bent zo ongecoördineerd dat danslessen verboden moeten worden 💃❌",
+  "Je kapsel heeft meer meningen dan een politieke talkshow 🥴",
+  "Je memes zijn zo oud dat ze fossielen zijn 🦖😂",
+  "Je selfies zijn gevaarlijk voor de wereld 🌍📸",
+  "Je stemgeluid zou alarmen doen afgaan 🚨😳",
+  "Je sarcasme is zo droog dat de woestijn jaloers wordt 🌵😏",
+  "Je bent zo rommelig dat je kamer archeologisch interessant is 🏺🧹",
+  "Je smaak in muziek is een misdaad tegen de mensheid 🎶😵",
+  "Je hebt de energie van een uitgeblazen kaars 🕯️😴",
+  "Je bent zo slecht in gamen dat NPC's medelijden krijgen 🎮😅",
+  "Je plannen zijn zo vaag dat zelfs een kompas verdwaalt 🧭🤷",
+  "Je modegevoel is een historische ramp 👗💥",
+  "Je bent zo slecht in liegen dat zelfs kinderen je doorhebben 🤥🙄",
+  "Je bent zo onhandig dat je eigen schaduw struikelt 🌑😆",
+  "Je hebt de charisma van een natte spons 🧽😬",
+  "Je bent zo dramatisch dat soapseries je volgen voor inspiratie 📺😂",
+  "Je eten smaakt alsof het een experiment was van een gekke wetenschapper 🥘⚗️",
+  "Je bent zo chaotisch dat zelfs de chaos boos op je wordt 🔥🤪",
+  "Je grappen zijn zo flauw dat groente jaloers wordt 🥦🤣",
+  "Je hebt de concentratie van een goudvis 🐟😵",
+  "Je bent zo verlegen dat muren je negeren 🧱🙃",
+  "Je bent zo competitief dat je bordspellen verbiedt 🏆😅",
+  "Je bent zo lui dat zelfs een stoel je zou afkeuren 🪑😴",
+  "Je bent zo dramatisch dat een toneelstuk over jou boring zou zijn 🎭😬",
+  "Je hebt de geheugen van een zeef 🧂😳",
+  "Je bent zo klein dat je als sleutelring door kan 🗝️😂",
+  "Je ideeën zijn zo vreemd dat Einstein je zou vermijden 🧠😵",
+  "Je humor is zo droog dat zelfs de Sahara applaudisseert 🌵👏",
+  "Je bent zo koppig dat muren je niet tegenhouden 🚧😆"
+];
+
+document.getElementById("startButton").addEventListener("click", function() {
+  const randomIndex = Math.floor(Math.random() * roasts.length);
+  document.getElementById("roast").textContent = roasts[randomIndex];
+});
+</script>
+
+</body>
+</html>
